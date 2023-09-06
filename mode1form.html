@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>20-aug Collections</title>
+  </head>
+  <body>
+    <div class="top">
+      <header class="head">
+        <div class="container">
+          <div class="right">
+            <a href="index.html"
+              ><img
+                src="https://20-aug.baya3.shop/uploads/images/logo.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="center">
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="collections.html">عرض جميع المنتجات</a></li>
+            </ul>
+          </div>
+          <div class="left">
+            <a href="#"><i class="uil uil-search"></i></a>
+            <a href="#"><i class="uil uil-shopping-bag icon-bag"></i></a>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="forms">
+      <div class="container">
+        <div class="all-forms">
+          <div class="form-one">
+            <h2>معلومات الطلب</h2>
+            <form>
+              <input type="text" placeholder="الاسم" />
+              <input type="number" placeholder="الرقم" />
+              <input type="text" placeholder="المدينة" />
+              <input type="text" placeholder="العنوان" />
+              <h3>معلومات المنتج</h3>
+              <input type="text" placeholder="notes" />
+              <h3>الصورة</h3>
+              <input type="file" />
+            </form>
+            <hr class="form-hr" />
+            <div class="form-three">
+              <h2 style="margin-top: 15px">وسائل الشحن</h2>
+              <select>
+                <option value="القاهرة (+40 جنيه)" selected>
+                  القاهرة (+40 جنيه)
+                </option>
+                <option value="القاهرة (+40 جنيه)">الدقهلية (+50 جنيه)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-two">
+            <h2>ملخص الطلب</h2>
+            <form>
+              <div class="top-form">
+                <div class="product-detail">
+                  <div style="display: flex; gap: 10px">
+                    <img
+                      src="https://baya3s3.s3.me-central-1.amazonaws.com/stores/20-aug/products/1692622231995.jpg"
+                      alt=""
+                    />
+                    <div class="product-name">
+                      <p>قميص</p>
+                      <p class="material-type">(كبير - كتان - اصفر)</p>
+                    </div>
+                  </div>
+                  <p class="product-price">100 جنيه</p>
+                </div>
+                <hr class="form-hr" />
+                <div class="total">
+                  <div class="sub-total">
+                    <p>المجموع الفرعي</p>
+                    <p>100 جنيه</p>
+                  </div>
+                  <div class="final-total">
+                    <p>المجموع</p>
+                    <p class="product-price">100 جنيه</p>
+                  </div>
+                </div>
+                <hr class="form-hr" />
+                <div class="kasima">
+                  <div class="top-kasima">
+                    <p class="qa">
+                      هل لديك رمز قسيمة ؟
+                      <span class="enter-kasima">ادخل رمز القسيمة</span>
+                    </p>
+                  </div>
+                  <div class="kasima-detail hide-kasima">
+                    <input
+                      class="kasima-code"
+                      type="text"
+                      placeholder="كود التخفيض"
+                    />
+                    <button class="submit-kasima">تأكيد</button>
+                  </div>
+                </div>
+                <hr class="form-hr" />
+              </div>
+              <div class="bottom">
+                <h2>طرق الدفع</h2>
+                <div class="radio-inputs">
+                  <div class="radio-input">
+                    <div class="radio">
+                      <input type="radio" name="method" />
+                      <label>COD</label>
+                    </div>
+                    <img
+                      src="https://cdn.baya3.shop/static/assets/images/payments/cod.png"
+                      class="radio-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="radio-input">
+                    <div class="radio">
+                      <input type="radio" name="method" />
+                      <label>PayPal</label>
+                    </div>
+                    <img
+                      src="https://cdn.baya3.shop/static/assets/images/payments/paypal.png"
+                      class="radio-img"
+                      alt=""
+                    />
+                  </div>
+                  <div class="card rounded pay-box">
+                    <div class="card-header pay-method d-inline">
+                      <div class="custom-control custom-radio d-inline">
+                        <input
+                          type="radio"
+                          class="custom-control-input"
+                          id="stripe"
+                          name="method"
+                          value="stripe"
+                          required=""
+                        />
+                        <label class="custom-control-label" for="stripe"
+                          >Stripe</label
+                        >
+                      </div>
+
+                      <div class="credit-card-brands fleft">
+                        <img
+                          class="cc-brands radio-img"
+                          src="https://cdn.baya3.shop/static/assets/images/payments/visa.png"
+                        />
+                        <img
+                          class="cc-brands radio-img"
+                          src="https://cdn.baya3.shop/static/assets/images/payments/mastercard.png"
+                        />
+                        <img
+                          class="cc-brands radio-img"
+                          src="https://cdn.baya3.shop/static/assets/images/payments/amex.png"
+                        />
+                        <img
+                          class="cc-brands radio-img"
+                          src="https://cdn.baya3.shop/static/assets/images/payments/maestro.png"
+                        />
+                      </div>
+                    </div>
+                    <div class="card-body" id="stripe-box">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group has-icon">
+                            <div
+                              id="card-number-element"
+                              class="field StripeElement StripeElement--empty"
+                            >
+                              <div
+                                class="__PrivateStripeElement"
+                                style="
+                                  margin: 0px !important;
+                                  padding: 0px !important;
+                                  border: none !important;
+                                  display: block !important;
+                                  background: transparent !important;
+                                  position: relative !important;
+                                  opacity: 1 !important;
+                                "
+                              >
+                                <iframe
+                                  name="__privateStripeFrame1476"
+                                  frameborder="0"
+                                  allowtransparency="true"
+                                  scrolling="no"
+                                  role="presentation"
+                                  allow="payment *"
+                                  src="https://js.stripe.com/v3/elements-inner-card-f3a260de2c0e25e141f1ecbd14edfc31.html#wait=false&amp;mids[guid]=NA&amp;mids[muid]=ddb3e75c-fc81-4303-ae4a-2deb1d370f3e10522a&amp;mids[sid]=dad6f7e6-871d-4864-b83a-37c47c7028fd0deb32&amp;showIcon=true&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][lineHeight]=40px&amp;style[base][fontWeight]=400&amp;style[base][fontFamily]=inherit&amp;style[base][fontSize]=20px&amp;style[base][::placeholder][color]=%236c757d&amp;rtl=true&amp;componentName=cardNumber&amp;keyMode=unknown&amp;apiKey=fgdfdfdh1df1g5df15d4&amp;referrer=https%3A%2F%2F20-aug.baya3.shop%2Fcheckout&amp;controllerId=__privateStripeController1471"
+                                  title="Secure card number input frame"
+                                  style="
+                                    border: none !important;
+                                    margin: 0px !important;
+                                    padding: 0px !important;
+                                    width: 1px !important;
+                                    min-width: 100% !important;
+                                    overflow: hidden !important;
+                                    display: block !important;
+                                    user-select: none !important;
+                                    transform: translate(0px) !important;
+                                    color-scheme: light only !important;
+                                    height: 40px;
+                                  "
+                                ></iframe
+                                ><input
+                                  class="__PrivateStripeElement-input"
+                                  aria-hidden="true"
+                                  aria-label=" "
+                                  autocomplete="false"
+                                  maxlength="1"
+                                  style="
+                                    border: none !important;
+                                    display: block !important;
+                                    position: absolute !important;
+                                    height: 1px !important;
+                                    top: -1px !important;
+                                    left: 0px !important;
+                                    padding: 0px !important;
+                                    margin: 0px !important;
+                                    width: 100% !important;
+                                    opacity: 0 !important;
+                                    background: transparent !important;
+                                    pointer-events: none !important;
+                                    font-size: 16px !important;
+                                  "
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="form-group has-icon">
+                            <span class="fa fa-calendar d-block"></span>
+                            <div
+                              id="card-expiry-element"
+                              class="field StripeElement StripeElement--empty"
+                            >
+                              <div
+                                class="__PrivateStripeElement"
+                                style="
+                                  margin: 0px !important;
+                                  padding: 0px !important;
+                                  border: none !important;
+                                  display: block !important;
+                                  background: transparent !important;
+                                  position: relative !important;
+                                  opacity: 1 !important;
+                                "
+                              >
+                                <iframe
+                                  name="__privateStripeFrame1478"
+                                  frameborder="0"
+                                  allowtransparency="true"
+                                  scrolling="no"
+                                  role="presentation"
+                                  allow="payment *"
+                                  src="https://js.stripe.com/v3/elements-inner-card-f3a260de2c0e25e141f1ecbd14edfc31.html#wait=false&amp;mids[guid]=NA&amp;mids[muid]=ddb3e75c-fc81-4303-ae4a-2deb1d370f3e10522a&amp;mids[sid]=dad6f7e6-871d-4864-b83a-37c47c7028fd0deb32&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][lineHeight]=40px&amp;style[base][fontWeight]=400&amp;style[base][fontFamily]=inherit&amp;style[base][fontSize]=20px&amp;style[base][::placeholder][color]=%236c757d&amp;rtl=true&amp;componentName=cardExpiry&amp;keyMode=unknown&amp;apiKey=fgdfdfdh1df1g5df15d4&amp;referrer=https%3A%2F%2F20-aug.baya3.shop%2Fcheckout&amp;controllerId=__privateStripeController1471"
+                                  title="Secure expiration date input frame"
+                                  style="
+                                    border: none !important;
+                                    margin: 0px !important;
+                                    padding: 0px !important;
+                                    width: 1px !important;
+                                    min-width: 100% !important;
+                                    overflow: hidden !important;
+                                    display: block !important;
+                                    user-select: none !important;
+                                    transform: translate(0px) !important;
+                                    color-scheme: light only !important;
+                                    height: 40px;
+                                  "
+                                ></iframe
+                                ><input
+                                  class="__PrivateStripeElement-input"
+                                  aria-hidden="true"
+                                  aria-label=" "
+                                  autocomplete="false"
+                                  maxlength="1"
+                                  style="
+                                    border: none !important;
+                                    display: block !important;
+                                    position: absolute !important;
+                                    height: 1px !important;
+                                    top: -1px !important;
+                                    left: 0px !important;
+                                    padding: 0px !important;
+                                    margin: 0px !important;
+                                    width: 100% !important;
+                                    opacity: 0 !important;
+                                    background: transparent !important;
+                                    pointer-events: none !important;
+                                    font-size: 16px !important;
+                                  "
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-6">
+                          <div class="form-group has-icon">
+                            <span class="fa fa-lock d-block"></span>
+                            <div
+                              id="card-cvc-element"
+                              class="field StripeElement StripeElement--empty"
+                            >
+                              <div
+                                class="__PrivateStripeElement"
+                                style="
+                                  margin: 0px !important;
+                                  padding: 0px !important;
+                                  border: none !important;
+                                  display: block !important;
+                                  background: transparent !important;
+                                  position: relative !important;
+                                  opacity: 1 !important;
+                                "
+                              >
+                                <iframe
+                                  name="__privateStripeFrame14710"
+                                  frameborder="0"
+                                  allowtransparency="true"
+                                  scrolling="no"
+                                  role="presentation"
+                                  allow="payment *"
+                                  src="https://js.stripe.com/v3/elements-inner-card-f3a260de2c0e25e141f1ecbd14edfc31.html#wait=false&amp;mids[guid]=NA&amp;mids[muid]=ddb3e75c-fc81-4303-ae4a-2deb1d370f3e10522a&amp;mids[sid]=dad6f7e6-871d-4864-b83a-37c47c7028fd0deb32&amp;style[base][iconColor]=%23666EE8&amp;style[base][color]=%2331325F&amp;style[base][lineHeight]=40px&amp;style[base][fontWeight]=400&amp;style[base][fontFamily]=inherit&amp;style[base][fontSize]=20px&amp;style[base][::placeholder][color]=%236c757d&amp;rtl=true&amp;componentName=cardCvc&amp;keyMode=unknown&amp;apiKey=fgdfdfdh1df1g5df15d4&amp;referrer=https%3A%2F%2F20-aug.baya3.shop%2Fcheckout&amp;controllerId=__privateStripeController1471"
+                                  title="Secure CVC input frame"
+                                  style="
+                                    border: none !important;
+                                    margin: 0px !important;
+                                    padding: 0px !important;
+                                    width: 1px !important;
+                                    min-width: 100% !important;
+                                    overflow: hidden !important;
+                                    display: block !important;
+                                    user-select: none !important;
+                                    transform: translate(0px) !important;
+                                    color-scheme: light only !important;
+                                    height: 40px;
+                                  "
+                                ></iframe
+                                ><input
+                                  class="__PrivateStripeElement-input"
+                                  aria-hidden="true"
+                                  aria-label=" "
+                                  autocomplete="false"
+                                  maxlength="1"
+                                  style="
+                                    border: none !important;
+                                    display: block !important;
+                                    position: absolute !important;
+                                    height: 1px !important;
+                                    top: -1px !important;
+                                    left: 0px !important;
+                                    padding: 0px !important;
+                                    margin: 0px !important;
+                                    width: 100% !important;
+                                    opacity: 0 !important;
+                                    background: transparent !important;
+                                    pointer-events: none !important;
+                                    font-size: 16px !important;
+                                  "
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="outcome">
+                        <div
+                          class="error text-danger text-center mT-1"
+                          id="card-errors"
+                        ></div>
+                        <div class="success"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="submit-order">تاكيد الطلب</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="right">
+          <h4 class="widget-title">من نحن ؟</h4>
+          <ul class="widget-links">
+            <li><a href="about.html">عن المتجر</a></li>
+          </ul>
+          <div class="social-icons">
+            <a href="#">
+              <i class="uil uil-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="uil uil-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="center">
+          <h4 class="widget-title">سياسة الاستخدام</h4>
+          <ul class="widget-links">
+            <li><a href="policy.html">سياسة الخصوصية</a></li>
+            <li><a href="shipping.html">سياسة الشحن والإسترجاع</a></li>
+            <p class="copy-right">Powered By baya3</p>
+          </ul>
+        </div>
+        <div class="left">
+          <h4 class="widget-title">اتصل بنا</h4>
+          <ul class="widget-links">
+            <li><a href="faq.html">الأسئلة الشائعة</a></li>
+          </ul>
+          <div class="payment-imgs">
+            <img src="https://cdn.baya3.shop/font/assets/images/visa.png" />
+            <img
+              src="https://cdn.baya3.shop/font/assets/images/master_card.png"
+            />
+            <img src="https://cdn.baya3.shop/font/assets/images/paypal.png" />
+            <img
+              src="https://cdn.baya3.shop/font/assets/images/amarican_express.png"
+            />
+          </div>
+        </div>
+      </div>
+      <p class="copy-right-mobile">Powered By baya3</p>
+    </footer>
+    <script src="js/mode1form.js"></script>
+    <script src="bootstrap/bootstrap.bundle.js"></script>
+  </body>
+</html>
